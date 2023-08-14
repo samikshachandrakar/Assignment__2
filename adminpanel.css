@@ -1,0 +1,126 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+#container{
+    background-color: gray;
+    display: flex;
+}
+.sidebar{
+    background-color: #182B3E;
+    padding-bottom: 333px;
+    width: 22%;
+    color: white;
+}
+.sidebar .siderow{
+    display: flex;
+    background-color: #214162;
+}
+.sidebar .siderow h3{
+    padding-top: 5px;
+    color: rgb(228, 227, 227);
+}
+.sidebar .siderow img{
+    width: 20%;
+    height: auto;
+    margin: 10px 10px;
+    border-radius: 2cm;
+}
+.sidebar .sidecol{
+    margin-left: 20px;
+}
+.sidebar .links{
+    background-color: #182B3E;
+    line-height: 40px;
+    margin-left: 20px;
+    color: rgb(228, 227, 227);
+}
+.sidebar .links i{
+    margin-right: 25px;
+}
+.sidebar .links a{
+    text-decoration: none;
+    color: rgb(228, 227, 227);
+}
+.sidebar .links a:hover{
+    color: palevioletred;
+    transform: scale(1.02);
+}
+#container .sides{
+    background-color: rgb(230, 228, 228);
+    color: black;
+}
+.navbar{
+    color: white;
+    display: flex;
+    background-color: #15283C;
+}
+.navbar .heading{
+    padding: 0 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+}
+.navbar .heading .items{
+    margin-left: 530px;
+    padding: 30px 0;
+}
+.navbar .heading .items i{
+    padding: 0 5px;
+}
+.sides .iname{
+    background-color: white;
+    margin-top: 0;
+    padding: 10px 0;
+}
+.sides .iname p{
+    margin-left: 20px;
+    font-size: large;
+}
+.sides .cards{
+    display: flex;
+}
+.sides .cards .box{
+    display: flex;
+    padding: 4px 0px;
+    border-radius: 0.2cm;
+    font-size: large;
+    margin: 30px 10px;
+    background-color: rgb(245, 248, 251);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.sides .cards .box:hover{
+    background-color: #214162;
+    color: white;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.sides .cards .box i{
+    font-weight: bolder;
+    font-size: 54px;
+    margin: 20px 30px;
+}
+.sides .cards .box .bitem{
+    margin-right: 30px;
+}
+.sides .cards .box .bitem h4{
+    margin-top: 10px;
+}
+.sides .cards .box .bitem p{
+    margin-bottom: 20px;
+    color: rgb(176, 173, 173);
+}
+.sides .card{
+    display: flex;
+}
+.sides .card .box{
+    display: flex;
+    padding: 4px 0px;
+    border-radius: 0.2cm;
+    font-size: large;
+    margin: 30px 10px;
+    background-color: rgb(245, 248, 251);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.sides .card .box .bitem{
+    display: flex;
+}

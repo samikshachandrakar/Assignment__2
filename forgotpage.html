@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+    <title>Forgot password page</title>
+    <link rel="stylesheet" href="Loginpage.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <style>
+ body{
+    width: none;
+    height: none;
+}
+.container{
+    height: 450px;
+    margin: 0px 200px;
+    margin-top: 65px;
+    margin-bottom: none;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.main{
+    display: flex;
+}
+.main .col1 {
+   width: 50%;
+}
+.main .col1 img{
+    width: 113%;
+    height: 430px;
+}
+.main .col2{
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.main .col2 .head{
+    padding-left: 30px;
+}
+.main .col2 form{
+    line-height: 0px;
+    margin-top: 35px;
+}
+.main .col2 form h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(30, 29, 29);
+    padding-bottom: 18px;
+}
+.main .col2 form input{
+    padding: 10px 0;
+    border-radius: 0.2cm;
+    border-style: groove;
+    border-color: #eeeef4;
+}
+.container .main .col2 form .data{
+    margin: 40px 0;
+    line-height: 20px;
+    padding-left: 30px;
+}
+.container .main .col2 form input{
+    padding-right: 250px;
+}
+.container .main .col2 .bot{
+    display: flex;
+    padding-left: 30px;
+}
+.container .main .col2 .send input{
+    padding: 11px 40px;
+    border-radius: 0.5cm;
+    margin-right: 185px;
+    background-color: #4364D8;
+    color: white;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-style: none;
+}
+.container .main .col2 .cancel input{
+    padding: 11px 30px;
+    border-radius: 0.5cm;
+    background-color: rgb(170, 163, 163);
+    border-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="main row">
+                <div class="col1 col-lg-5 col-md-5 col-xs-12 col-xs-12">
+                    <img src="/images/forgot.gif" alt="Image is missing">
+                </div>
+                <div class="col2 col-lg-7 col-md-7 col-xs-12 col-xs-12">
+                    <form action="/action_page.php" method="get">
+                       <div class="head">
+                        <h1>Reset your password</h1>
+                        <p>The verification email will be sent to the mailbox.</p>
+                        <p>Please check it.</p>
+                       </div>
+                       <div class="data">
+                        Email Id:<br>
+                       <input type="email" placeholder="  Enter your email id" required><br><br>
+                       Verification code:<br>
+                       <input type="text" placeholder="  Enter OTP" required><br>
+                       </div>
+                       <div class="bot">
+                        <div class="send">
+                            <input type="button" value="SEND">
+                        </div>
+                        <div class="cancel">
+                            <input type="button" value="CANCEL">
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>

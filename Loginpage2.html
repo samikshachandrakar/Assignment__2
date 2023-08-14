@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Loginpage.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+        <div class="container">
+            <div class="row main">
+                <div class="col-lg-5 col-md-5 col-xs-12 col-xs-12 col1">
+                    <img src="images/draw2.svg" alt="Image is missing">
+                </div>
+                <div class="col2 col-lg-7 col-md-7 col-xs-12 col-xs-12">
+                    <form action="/action_page.php" method="get">
+                        <input type="email" size="60" placeholder="EMAIL ID" required><br>
+                        <input type="password" size="60" placeholder="  PASSWORD" required><br>
+                        <div class="check">
+                            <label><input type="checkbox" checked> Remember me</label>
+                            <a href="forgotpage.html">Forgot Password?</a>
+                        </div>
+                        <div class="login">
+                            <input type="submit" value="LOGIN">
+                        </div>
+                        <div class="info">
+                            <div class="line"></div>
+                            OR
+                            <div class="line"></div>
+                        </div>
+                        <div class="signin">
+                            <input type="submit" value="CONTINUE WITH GOOGLE">
+                        </div>
+                        <div class="sign">
+                            <input type="submit" value="CONTINUE WITH FACEBOOK">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
